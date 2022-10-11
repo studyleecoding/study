@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.전체태그, body, head, html까지도 적용된다. */
+        /* *{
+            color: aquamarine ;
+            font-size: 20px;
+        } */
+        /* 2.태그(타입) 선택자 */
+        /* p{
+            color: red;
+        } */
+        /* 3.클래스 선택자 : 공통적으로 스타일을 적용할때 */
+        /* class이름은 띄어쓰고 여러개 만들수있다 */
+        /* .title{
+            font-size: 6px;
+            color: red;
+        } */
+        /* 4.id선택자 :id명은 의미가 있는 이름으로 각각 다르게 해줘야 한다.(중복X)*/
+        /* 클래스와 id의 차이점을 알아둬야한다 공통/각각 */
+        #board{
+            color: aqua;
+        }
+        #contents{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- ★class명은 의미가 있는 이름으로 같게해줘야 한다-->
+    <h1 class="title2 on" id="board">자유게시판</h1>
+    <p class="title2" id="contents">안녕하세요. 내용입니다.</p>
+    <p>안녕하세요. 내용입니다.</p>
+    <span class="title on">태그 입니다.</span>
+    <form>
+        <input type="text" name="user_id" id="user_id">
+    </form>
+</body>
+</html>
